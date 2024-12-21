@@ -1,0 +1,33 @@
+<button class="button" [routerLink]="['']">Search Flights</button>
+<button class="button" [routerLink]="['/contact']">Contact Page</button>
+
+<div class="container">
+  <div class="arc-info" *ngFor="let arcInfo of arc">
+    <div class="source-info-column">
+      <div *ngFor="let srcInfo of arcInfo.sourceInfo">
+        <p style="color: blueviolet;">{{srcInfo.airportId}}<br>
+           {{srcInfo.city}}<br>
+           {{srcInfo.country}}<br>
+           {{srcInfo.nameAirport}}
+        </p>
+        <div *ngIf="sourceFlags[srcInfo.country]">
+          <img [src]="sourceFlags[srcInfo.country]" alt="Source Country Flag" style="height: 300px; width: 300px;">
+        </div>
+      </div>
+    </div>
+    <div class="arc-column">
+      <p style="color: blueviolet;">{{arcInfo.id}}</p>
+      <p style="color: blueviolet;">{{arcInfo.airline}}</p>
+      <p style="color: blueviolet;">{{arcInfo.equipment}}</p>
+    </div>
+    <div class="destination-info-column">
+      <div *ngFor="let destInfo of arcInfo.destinationInfo">
+        <p style="color: blueviolet;">{{destInfo.airportId}} <br> {{destInfo.city}} <br> {{destInfo.country}} <br> {{destInfo.nameAirport}}</p>
+        <div *ngIf="destinationFlags[destInfo.country]">
+          <img [src]="destinationFlags[destInfo.country]" alt="Destination Country Flag" style="height: 300px; width: 300px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

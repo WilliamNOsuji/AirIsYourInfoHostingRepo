@@ -1,0 +1,47 @@
+.globe-container {
+    width: 100%; /* Set the width to fill the container */
+    max-width: 800px; /* Set a maximum width to prevent it from becoming too wide */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  h4 {
+    margin-top: 50px;
+  }
+  #container {
+    margin-top: 20px;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+.big-button {
+  padding: 15px 30px;
+  font-size: 18px;
+}

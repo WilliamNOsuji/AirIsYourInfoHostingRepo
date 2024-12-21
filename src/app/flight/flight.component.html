@@ -1,0 +1,17 @@
+<div class="container">
+  <h4 style="color: rgb(42, 42, 255); font-size: xx-large;">Welcome to AirIsYourInfo</h4>
+  <form (ngSubmit)="onSubmit()">
+    <input type="text" [(ngModel)]="countryName" name="countryName" 
+    class="form-control" 
+    placeholder="Name of the Country (ex: Canada, United States)" 
+    style="padding: 15px 30px;font-size: 18px; width: 400px;">
+    <button type="submit" class="button big-button">Search for Flights</button>
+  </form>
+  <button class="button big-button" [routerLink]="['/contact']">Contact Page</button>
+  <br>
+  <br>
+  <br>
+  <div id="globeViz" class="globe-container">
+    <!-- Globe visualization will be displayed here -->
+  </div>
+</div>
